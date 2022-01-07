@@ -11,6 +11,11 @@
             $stmt->bindParam(":nombre",$nombre);
             $stmt->bindParam(":apellido",$apellido);
             $stmt->execute();
+
+            
+
+
+
             echo "1"; //1 es insercion exitosa
         }catch(PDOException $e){
             echo "Conexion fallida: ". $e->getMessage();
